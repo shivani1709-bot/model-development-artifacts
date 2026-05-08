@@ -1,0 +1,229 @@
+<svg width="800" height="1620" viewBox="0 0 800 1620" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="1620" fill="#f8f9fb"/>
+
+<!-- TITLE -->
+<rect x="30" y="16" width="740" height="66" rx="12" fill="#1F3864"/>
+<text x="400" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="bold" fill="#ffffff">Machine Learning Algorithms</text>
+<text x="400" y="68" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#aac4e8">A visual framework of algorithm types, domains and real-world applications</text>
+
+<!-- LEGEND -->
+<rect x="30" y="96" width="740" height="40" rx="8" fill="#ffffff" stroke="#d3d1c7" stroke-width="0.8"/>
+<rect x="50" y="111" width="13" height="13" rx="3" fill="#2E75B6"/>
+<text x="69" y="122" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Supervised</text>
+<rect x="155" y="111" width="13" height="13" rx="3" fill="#1D9E75"/>
+<text x="174" y="122" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Unsupervised</text>
+<rect x="278" y="113" width="10" height="10" rx="2" fill="none" stroke="#2E75B6" stroke-width="1.5"/>
+<text x="294" y="122" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Tabular</text>
+<rect x="350" y="113" width="10" height="10" rx="2" fill="none" stroke="#1D9E75" stroke-width="1.5"/>
+<text x="366" y="122" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Vision</text>
+<rect x="413" y="113" width="10" height="10" rx="2" fill="none" stroke="#BA7517" stroke-width="1.5"/>
+<text x="429" y="122" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">NLP</text>
+<rect x="462" y="113" width="10" height="10" rx="2" fill="none" stroke="#993556" stroke-width="1.5"/>
+<text x="478" y="122" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Generative AI</text>
+
+<!-- SUPERVISED HEADER -->
+<rect x="30" y="150" width="740" height="28" rx="6" fill="#dbeaf8"/>
+<rect x="30" y="150" width="5" height="28" rx="2" fill="#2E75B6"/>
+<text x="46" y="169" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#185FA5">SUPERVISED LEARNING - learns from labeled examples</text>
+
+<!-- CARD 1 Linear Regression -->
+<rect x="30" y="191" width="740" height="114" rx="10" fill="#EEF5FC" stroke="#B5D4F4" stroke-width="0.8"/>
+<rect x="30" y="191" width="5" height="114" rx="2" fill="#2E75B6"/>
+<circle cx="58" cy="212" r="13" fill="#2E75B6"/>
+<text x="58" y="217" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">1</text>
+<text x="82" y="217" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#0C447C">Linear Regression</text>
+<rect x="488" y="199" width="76" height="18" rx="4" fill="#2E75B6" opacity="0.2"/>
+<text x="526" y="212" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5" font-weight="bold">Supervised</text>
+<rect x="572" y="199" width="56" height="18" rx="4" fill="none" stroke="#2E75B6" stroke-width="1"/>
+<text x="600" y="212" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2E75B6">Tabular</text>
+<rect x="636" y="199" width="34" height="18" rx="4" fill="none" stroke="#BA7517" stroke-width="1"/>
+<text x="653" y="212" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#BA7517">NLP</text>
+<line x1="44" y1="227" x2="756" y2="227" stroke="#B5D4F4" stroke-width="0.8"/>
+<text x="44" y="244" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#185FA5">How it works:</text>
+<text x="44" y="260" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Fits a straight line through data points to predict a continuous numeric output. Minimizes the difference</text>
+<text x="44" y="276" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">between predicted and actual values using the least squares method.</text>
+<text x="44" y="294" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#185FA5">Use cases:</text>
+<text x="132" y="294" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">House price prediction  Sales forecasting  Risk scoring  Stock return estimation</text>
+
+<!-- CARD 2 Logistic Regression -->
+<rect x="30" y="317" width="740" height="114" rx="10" fill="#EEF5FC" stroke="#B5D4F4" stroke-width="0.8"/>
+<rect x="30" y="317" width="5" height="114" rx="2" fill="#2E75B6"/>
+<circle cx="58" cy="338" r="13" fill="#2E75B6"/>
+<text x="58" y="343" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">2</text>
+<text x="82" y="343" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#0C447C">Logistic Regression</text>
+<rect x="488" y="325" width="76" height="18" rx="4" fill="#2E75B6" opacity="0.2"/>
+<text x="526" y="338" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5" font-weight="bold">Supervised</text>
+<rect x="572" y="325" width="56" height="18" rx="4" fill="none" stroke="#2E75B6" stroke-width="1"/>
+<text x="600" y="338" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2E75B6">Tabular</text>
+<rect x="636" y="325" width="34" height="18" rx="4" fill="none" stroke="#BA7517" stroke-width="1"/>
+<text x="653" y="338" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#BA7517">NLP</text>
+<line x1="44" y1="353" x2="756" y2="353" stroke="#B5D4F4" stroke-width="0.8"/>
+<text x="44" y="370" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#185FA5">How it works:</text>
+<text x="44" y="386" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Uses a sigmoid function to output probabilities for binary classification. Draws a decision boundary</text>
+<text x="44" y="402" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">separating two classes based on input features. Foundation for many neural network architectures.</text>
+<text x="44" y="420" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#185FA5">Use cases:</text>
+<text x="132" y="420" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Spam detection  Disease diagnosis  Loan default prediction  Sentiment classification</text>
+
+<!-- CARD 3 Decision Tree -->
+<rect x="30" y="443" width="740" height="114" rx="10" fill="#EEF5FC" stroke="#B5D4F4" stroke-width="0.8"/>
+<rect x="30" y="443" width="5" height="114" rx="2" fill="#2E75B6"/>
+<circle cx="58" cy="464" r="13" fill="#2E75B6"/>
+<text x="58" y="469" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">3</text>
+<text x="82" y="469" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#0C447C">Decision Tree</text>
+<rect x="488" y="451" width="76" height="18" rx="4" fill="#2E75B6" opacity="0.2"/>
+<text x="526" y="464" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5" font-weight="bold">Supervised</text>
+<rect x="572" y="451" width="56" height="18" rx="4" fill="none" stroke="#2E75B6" stroke-width="1"/>
+<text x="600" y="464" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2E75B6">Tabular</text>
+<rect x="636" y="451" width="34" height="18" rx="4" fill="none" stroke="#BA7517" stroke-width="1"/>
+<text x="653" y="464" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#BA7517">NLP</text>
+<line x1="44" y1="479" x2="756" y2="479" stroke="#B5D4F4" stroke-width="0.8"/>
+<text x="44" y="496" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#185FA5">How it works:</text>
+<text x="44" y="512" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Splits data using a tree of yes/no questions based on feature values. Each branch narrows possibilities</text>
+<text x="44" y="528" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">until a leaf node yields a prediction. Highly interpretable - every decision step is traceable.</text>
+<text x="44" y="546" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#185FA5">Use cases:</text>
+<text x="132" y="546" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Fraud detection  Medical diagnosis  Customer churn prediction  Product classification</text>
+
+<!-- CARD 4 Random Forest -->
+<rect x="30" y="569" width="740" height="114" rx="10" fill="#EEF5FC" stroke="#B5D4F4" stroke-width="0.8"/>
+<rect x="30" y="569" width="5" height="114" rx="2" fill="#2E75B6"/>
+<circle cx="58" cy="590" r="13" fill="#2E75B6"/>
+<text x="58" y="595" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">4</text>
+<text x="82" y="595" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#0C447C">Random Forest</text>
+<rect x="488" y="577" width="76" height="18" rx="4" fill="#2E75B6" opacity="0.2"/>
+<text x="526" y="590" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5" font-weight="bold">Supervised</text>
+<rect x="572" y="577" width="56" height="18" rx="4" fill="none" stroke="#2E75B6" stroke-width="1"/>
+<text x="600" y="590" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2E75B6">Tabular</text>
+<rect x="636" y="577" width="48" height="18" rx="4" fill="none" stroke="#1D9E75" stroke-width="1"/>
+<text x="660" y="590" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1D9E75">Vision</text>
+<line x1="44" y1="605" x2="756" y2="605" stroke="#B5D4F4" stroke-width="0.8"/>
+<text x="44" y="622" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#185FA5">How it works:</text>
+<text x="44" y="638" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">An ensemble of many decision trees trained on random data subsets. Each tree votes and the majority</text>
+<text x="44" y="654" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">result wins - reducing overfitting and boosting accuracy significantly over a single tree.</text>
+<text x="44" y="672" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#185FA5">Use cases:</text>
+<text x="132" y="672" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Credit scoring  Stock prediction  Disease risk assessment  Image feature classification</text>
+
+<!-- CARD 5 SVM -->
+<rect x="30" y="695" width="740" height="114" rx="10" fill="#EEF5FC" stroke="#B5D4F4" stroke-width="0.8"/>
+<rect x="30" y="695" width="5" height="114" rx="2" fill="#2E75B6"/>
+<circle cx="58" cy="716" r="13" fill="#2E75B6"/>
+<text x="58" y="721" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">5</text>
+<text x="82" y="721" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#0C447C">Support Vector Machine (SVM)</text>
+<rect x="488" y="703" width="76" height="18" rx="4" fill="#2E75B6" opacity="0.2"/>
+<text x="526" y="716" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5" font-weight="bold">Supervised</text>
+<rect x="572" y="703" width="56" height="18" rx="4" fill="none" stroke="#2E75B6" stroke-width="1"/>
+<text x="600" y="716" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2E75B6">Tabular</text>
+<rect x="636" y="703" width="34" height="18" rx="4" fill="none" stroke="#BA7517" stroke-width="1"/>
+<text x="653" y="716" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#BA7517">NLP</text>
+<line x1="44" y1="731" x2="756" y2="731" stroke="#B5D4F4" stroke-width="0.8"/>
+<text x="44" y="748" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#185FA5">How it works:</text>
+<text x="44" y="764" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Finds the optimal hyperplane that maximizes the margin between two classes. Uses kernel tricks</text>
+<text x="44" y="780" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">to handle non-linearly separable data by projecting into higher-dimensional feature space.</text>
+<text x="44" y="798" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#185FA5">Use cases:</text>
+<text x="132" y="798" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Text classification  Handwriting recognition  Bioinformatics  Anomaly detection</text>
+
+<!-- UNSUPERVISED HEADER -->
+<rect x="30" y="821" width="740" height="28" rx="6" fill="#d4f0e5"/>
+<rect x="30" y="821" width="5" height="28" rx="2" fill="#1D9E75"/>
+<text x="46" y="840" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#0F6E56">UNSUPERVISED / DEEP LEARNING - finds patterns and learns representations</text>
+
+<!-- CARD 6 K-Means -->
+<rect x="30" y="861" width="740" height="114" rx="10" fill="#E6F5EF" stroke="#9FE1CB" stroke-width="0.8"/>
+<rect x="30" y="861" width="5" height="114" rx="2" fill="#1D9E75"/>
+<circle cx="58" cy="882" r="13" fill="#1D9E75"/>
+<text x="58" y="887" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">6</text>
+<text x="82" y="887" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#085041">K-Means Clustering</text>
+<rect x="466" y="869" width="92" height="18" rx="4" fill="#1D9E75" opacity="0.2"/>
+<text x="512" y="882" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56" font-weight="bold">Unsupervised</text>
+<rect x="566" y="869" width="56" height="18" rx="4" fill="none" stroke="#2E75B6" stroke-width="1"/>
+<text x="594" y="882" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2E75B6">Tabular</text>
+<rect x="630" y="869" width="80" height="18" rx="4" fill="none" stroke="#993556" stroke-width="1"/>
+<text x="670" y="882" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#993556">Generative AI</text>
+<line x1="44" y1="897" x2="756" y2="897" stroke="#9FE1CB" stroke-width="0.8"/>
+<text x="44" y="914" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0F6E56">How it works:</text>
+<text x="44" y="930" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Partitions data into K groups by iteratively assigning points to the nearest centroid, then updating</text>
+<text x="44" y="946" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">centroids until stable. No labels required - discovers natural groupings in data.</text>
+<text x="44" y="964" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0F6E56">Use cases:</text>
+<text x="132" y="964" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Customer segmentation  Document clustering  Anomaly detection  Market basket analysis</text>
+
+<!-- CARD 7 CNN -->
+<rect x="30" y="987" width="740" height="114" rx="10" fill="#E6F5EF" stroke="#9FE1CB" stroke-width="0.8"/>
+<rect x="30" y="987" width="5" height="114" rx="2" fill="#1D9E75"/>
+<circle cx="58" cy="1008" r="13" fill="#1D9E75"/>
+<text x="58" y="1013" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">7</text>
+<text x="82" y="1013" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#085041">Convolutional Neural Network (CNN)</text>
+<rect x="488" y="995" width="76" height="18" rx="4" fill="#2E75B6" opacity="0.2"/>
+<text x="526" y="1008" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5" font-weight="bold">Supervised</text>
+<rect x="572" y="995" width="48" height="18" rx="4" fill="none" stroke="#1D9E75" stroke-width="1"/>
+<text x="596" y="1008" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1D9E75">Vision</text>
+<rect x="628" y="995" width="80" height="18" rx="4" fill="none" stroke="#993556" stroke-width="1"/>
+<text x="668" y="1008" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#993556">Generative AI</text>
+<line x1="44" y1="1023" x2="756" y2="1023" stroke="#9FE1CB" stroke-width="0.8"/>
+<text x="44" y="1040" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0F6E56">How it works:</text>
+<text x="44" y="1056" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Uses convolutional filters to scan images and detect spatial features (edges, textures, shapes). Each</text>
+<text x="44" y="1072" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">layer learns progressively higher-level features - from edges to textures to complete objects.</text>
+<text x="44" y="1090" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0F6E56">Use cases:</text>
+<text x="132" y="1090" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Image classification  Object detection  Facial recognition  Medical imaging (X-ray, MRI)</text>
+
+<!-- CARD 8 RNN/LSTM -->
+<rect x="30" y="1113" width="740" height="114" rx="10" fill="#E6F5EF" stroke="#9FE1CB" stroke-width="0.8"/>
+<rect x="30" y="1113" width="5" height="114" rx="2" fill="#1D9E75"/>
+<circle cx="58" cy="1134" r="13" fill="#1D9E75"/>
+<text x="58" y="1139" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">8</text>
+<text x="82" y="1139" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#085041">Recurrent Neural Network (RNN / LSTM)</text>
+<rect x="488" y="1121" width="76" height="18" rx="4" fill="#2E75B6" opacity="0.2"/>
+<text x="526" y="1134" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5" font-weight="bold">Supervised</text>
+<rect x="572" y="1121" width="34" height="18" rx="4" fill="none" stroke="#BA7517" stroke-width="1"/>
+<text x="589" y="1134" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#BA7517">NLP</text>
+<rect x="614" y="1121" width="80" height="18" rx="4" fill="none" stroke="#993556" stroke-width="1"/>
+<text x="654" y="1134" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#993556">Generative AI</text>
+<line x1="44" y1="1149" x2="756" y2="1149" stroke="#9FE1CB" stroke-width="0.8"/>
+<text x="44" y="1166" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0F6E56">How it works:</text>
+<text x="44" y="1182" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Processes sequential data by maintaining a hidden state (memory) across time steps. LSTMs use</text>
+<text x="44" y="1198" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">gating mechanisms to retain long-range dependencies without vanishing gradient problems.</text>
+<text x="44" y="1216" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0F6E56">Use cases:</text>
+<text x="132" y="1216" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Language translation  Speech recognition  Time-series forecasting  Music generation</text>
+
+<!-- CARD 9 Transformer -->
+<rect x="30" y="1239" width="740" height="114" rx="10" fill="#F6EAF2" stroke="#E8B8D2" stroke-width="0.8"/>
+<rect x="30" y="1239" width="5" height="114" rx="2" fill="#993556"/>
+<circle cx="58" cy="1260" r="13" fill="#993556"/>
+<text x="58" y="1265" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">9</text>
+<text x="82" y="1265" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4B1528">Transformer / GPT (Large Language Model)</text>
+<rect x="488" y="1247" width="76" height="18" rx="4" fill="#2E75B6" opacity="0.2"/>
+<text x="526" y="1260" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5" font-weight="bold">Supervised</text>
+<rect x="572" y="1247" width="34" height="18" rx="4" fill="none" stroke="#BA7517" stroke-width="1"/>
+<text x="589" y="1260" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#BA7517">NLP</text>
+<rect x="614" y="1247" width="80" height="18" rx="4" fill="none" stroke="#993556" stroke-width="1"/>
+<text x="654" y="1260" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#993556">Generative AI</text>
+<line x1="44" y1="1275" x2="756" y2="1275" stroke="#E8B8D2" stroke-width="0.8"/>
+<text x="44" y="1292" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#72243E">How it works:</text>
+<text x="44" y="1308" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Uses self-attention to weigh relationships between all tokens simultaneously. Pre-trained on massive</text>
+<text x="44" y="1324" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">text data then fine-tuned for tasks. Powers ChatGPT, Claude, Gemini and modern AI assistants.</text>
+<text x="44" y="1342" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#72243E">Use cases:</text>
+<text x="132" y="1342" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Chatbots  Text generation  Summarization  Code generation  Question answering</text>
+
+<!-- CARD 10 GAN -->
+<rect x="30" y="1365" width="740" height="114" rx="10" fill="#F6EAF2" stroke="#E8B8D2" stroke-width="0.8"/>
+<rect x="30" y="1365" width="5" height="114" rx="2" fill="#993556"/>
+<circle cx="58" cy="1386" r="13" fill="#993556"/>
+<text x="58" y="1391" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#ffffff">10</text>
+<text x="82" y="1391" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4B1528">Generative Adversarial Network (GAN)</text>
+<rect x="452" y="1373" width="92" height="18" rx="4" fill="#1D9E75" opacity="0.2"/>
+<text x="498" y="1386" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56" font-weight="bold">Unsupervised</text>
+<rect x="552" y="1373" width="48" height="18" rx="4" fill="none" stroke="#1D9E75" stroke-width="1"/>
+<text x="576" y="1386" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1D9E75">Vision</text>
+<rect x="608" y="1373" width="80" height="18" rx="4" fill="none" stroke="#993556" stroke-width="1"/>
+<text x="648" y="1386" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#993556">Generative AI</text>
+<line x1="44" y1="1401" x2="756" y2="1401" stroke="#E8B8D2" stroke-width="0.8"/>
+<text x="44" y="1418" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#72243E">How it works:</text>
+<text x="44" y="1434" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Two networks compete: a Generator creates fake data, a Discriminator judges real vs fake. Through</text>
+<text x="44" y="1450" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">adversarial training the generator improves until outputs are indistinguishable from real data.</text>
+<text x="44" y="1468" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#72243E">Use cases:</text>
+<text x="132" y="1468" font-family="Arial,sans-serif" font-size="11" fill="#3d3d3a">Image synthesis  Deepfakes  Data augmentation  Art generation  Drug discovery</text>
+
+<!-- FOOTER -->
+<rect x="30" y="1492" width="740" height="46" rx="8" fill="#1F3864" opacity="0.07"/>
+<text x="400" y="1513" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#555555">Algorithms 1-5: Supervised Learning  |  6-7: Unsupervised and Computer Vision  |  8-10: NLP and Generative AI</text>
+<text x="400" y="1529" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#888888">Created as a portfolio artifact - Machine Learning Foundations Course</text>
+
+</svg>
