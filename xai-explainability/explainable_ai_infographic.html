@@ -1,0 +1,253 @@
+
+<h2 class="sr-only">Explainable AI infographic covering definition and importance, challenges in explainability, validation and performance metrics, and current industry solutions from OpenAI, Anthropic, Google, and Meta.</h2>
+
+<style>
+.xai-section { margin-bottom: 2rem; }
+.xai-section-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.xai-section-label::after { content: ''; flex: 1; height: 0.5px; background: var(--color-border-tertiary); }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+.card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 14px 16px; }
+.card.accent-blue  { border-left: 2px solid #378ADD; border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0; }
+.card.accent-amber { border-left: 2px solid #BA7517; border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0; }
+.card.accent-teal  { border-left: 2px solid #0F6E56; border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0; }
+.card.accent-coral { border-left: 2px solid #993C1D; border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0; }
+.card.accent-purple{ border-left: 2px solid #534AB7; border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0; }
+.card-icon { font-size: 20px; margin-bottom: 8px; }
+.card-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 4px; }
+.card-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.55; }
+.badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: var(--border-radius-md); margin-bottom: 6px; }
+.badge-blue   { background: #E6F1FB; color: #0C447C; }
+.badge-amber  { background: #FAEEDA; color: #633806; }
+.badge-teal   { background: #E1F5EE; color: #085041; }
+.badge-coral  { background: #FAECE7; color: #4A1B0C; }
+.badge-purple { background: #EEEDFE; color: #26215C; }
+.stat-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1rem; }
+.stat-chip { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 8px 14px; font-size: 12px; color: var(--color-text-secondary); }
+.stat-chip strong { display: block; font-size: 18px; font-weight: 500; color: var(--color-text-primary); }
+.flow-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 1rem; }
+.flow-box { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 8px 12px; font-size: 12px; color: var(--color-text-primary); font-weight: 500; text-align: center; }
+.flow-arrow { color: var(--color-text-tertiary); font-size: 14px; }
+.metric-bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.metric-label { font-size: 12px; color: var(--color-text-secondary); width: 100px; flex-shrink: 0; }
+.metric-track { flex: 1; height: 20px; background: var(--color-background-secondary); border-radius: 4px; overflow: hidden; }
+.metric-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 10px; font-size: 11px; font-weight: 500; color: var(--color-background-primary); }
+.org-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+.org-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 14px; }
+.org-name { font-size: 12px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 8px; }
+.org-item { font-size: 11px; color: var(--color-text-secondary); padding: 3px 0; border-top: 0.5px solid var(--color-border-tertiary); line-height: 1.45; }
+.callout { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 16px 20px; margin-bottom: 1.5rem; }
+.callout-label { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 6px; }
+.callout-text { font-size: 13px; color: var(--color-text-secondary); line-height: 1.65; }
+.challenge-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+</style>
+
+<div style="padding: 1rem 0 0;">
+
+  <!-- HEADER STATS -->
+  <div class="stat-row">
+    <div class="stat-chip"><strong>~1T+</strong> params in frontier LLMs</div>
+    <div class="stat-chip"><strong>&lt; 5%</strong> of AI decisions fully explainable today</div>
+    <div class="stat-chip"><strong>$850B+</strong> global XAI market by 2030 (est.)</div>
+    <div class="stat-chip"><strong>EU AI Act</strong> mandates explainability for high-risk AI</div>
+  </div>
+
+  <!-- SECTION 1: WHAT IS XAI -->
+  <div class="xai-section">
+    <div class="xai-section-label">01 — explainable AI & its importance</div>
+    <div class="card-grid">
+      <div class="card accent-blue">
+        <div class="badge badge-blue">Definition</div>
+        <div class="card-title">What is XAI?</div>
+        <div class="card-desc">Explainable AI (XAI) refers to methods and tools that make AI decision-making processes transparent, interpretable, and auditable to humans — not just accurate.</div>
+      </div>
+      <div class="card accent-blue">
+        <div class="badge badge-blue">Trust</div>
+        <div class="card-title">Why it matters</div>
+        <div class="card-desc">Without explainability, even a highly accurate model cannot be trusted in healthcare, law, finance, or public policy — domains where decisions must be justifiable.</div>
+      </div>
+      <div class="card accent-blue">
+        <div class="badge badge-blue">Accountability</div>
+        <div class="card-title">Regulatory pressure</div>
+        <div class="card-desc">The EU AI Act, US AI Executive Order, and GDPR's "right to explanation" are forcing organizations to document how AI reaches its outputs.</div>
+      </div>
+      <div class="card accent-blue">
+        <div class="badge badge-blue">Debugging</div>
+        <div class="card-title">Model improvement</div>
+        <div class="card-desc">Explainability exposes biases, failure modes, and unintended shortcuts that accuracy metrics alone cannot reveal, enabling more reliable models.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: CHALLENGES -->
+  <div class="xai-section">
+    <div class="xai-section-label">02 — challenges in explainability</div>
+    <div class="challenge-grid">
+      <div class="card accent-amber">
+        <div class="badge badge-amber">Complexity</div>
+        <div class="card-title">Scale of parameters</div>
+        <div class="card-desc">GPT-4 has an estimated 1.8 trillion parameters. No human can trace a single decision through that many weighted connections.</div>
+      </div>
+      <div class="card accent-amber">
+        <div class="badge badge-amber">Opacity</div>
+        <div class="card-title">Black-box outputs</div>
+        <div class="card-desc">LLMs like Claude, Gemini, and LLaMA produce outputs via billions of non-linear transformations with no explicit if-then logic a human can read.</div>
+      </div>
+      <div class="card accent-amber">
+        <div class="badge badge-amber">Emergent behavior</div>
+        <div class="card-title">Unpredictable capabilities</div>
+        <div class="card-desc">At scale, LLMs develop emergent behaviors not present in smaller models — capabilities that weren't designed, and whose origins aren't understood.</div>
+      </div>
+      <div class="card accent-amber">
+        <div class="badge badge-amber">Faithfulness</div>
+        <div class="card-title">Post-hoc explanation gap</div>
+        <div class="card-desc">Explanations generated after the fact (e.g., LIME, SHAP) may not reflect the model's true internal reasoning — they approximate rather than expose it.</div>
+      </div>
+      <div class="card accent-amber">
+        <div class="badge badge-amber">Regulation</div>
+        <div class="card-title">Compliance complexity</div>
+        <div class="card-desc">Regulations vary by jurisdiction and sector. What counts as "sufficient" explanation differs across the EU AI Act, HIPAA, and financial regulations like SR 11-7.</div>
+      </div>
+      <div class="card accent-amber">
+        <div class="badge badge-amber">Tradeoff</div>
+        <div class="card-title">Accuracy vs. interpretability</div>
+        <div class="card-desc">Simpler, more interpretable models (logistic regression, decision trees) are typically less accurate than deep neural networks — a fundamental tension.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: VALIDATION & METRICS -->
+  <div class="xai-section">
+    <div class="xai-section-label">03 — validation & performance metrics</div>
+
+    <div class="flow-row" style="margin-bottom: 1.25rem;">
+      <div class="flow-box">Data split<br><span style="font-size:11px;font-weight:400;color:var(--color-text-secondary)">Train / Validate / Test</span></div>
+      <div class="flow-arrow"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+      <div class="flow-box">Cross-validation<br><span style="font-size:11px;font-weight:400;color:var(--color-text-secondary)">5-fold, k-fold</span></div>
+      <div class="flow-arrow"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+      <div class="flow-box">Metric evaluation<br><span style="font-size:11px;font-weight:400;color:var(--color-text-secondary)">Accuracy, F1, AUC</span></div>
+      <div class="flow-arrow"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+      <div class="flow-box">Error analysis<br><span style="font-size:11px;font-weight:400;color:var(--color-text-secondary)">Confusion matrix, FP/FN</span></div>
+      <div class="flow-arrow"><i class="ti ti-arrow-right" aria-hidden="true"></i></div>
+      <div class="flow-box">Deployment decision<br><span style="font-size:11px;font-weight:400;color:var(--color-text-secondary)">Accept / Retrain</span></div>
+    </div>
+
+    <div style="margin-bottom: 1rem;">
+      <div class="metric-bar-row">
+        <div class="metric-label">Accuracy</div>
+        <div class="metric-track"><div class="metric-fill" style="width:82%;background:#378ADD;">82%</div></div>
+      </div>
+      <div class="metric-bar-row">
+        <div class="metric-label">Precision</div>
+        <div class="metric-track"><div class="metric-fill" style="width:79%;background:#0F6E56;">79%</div></div>
+      </div>
+      <div class="metric-bar-row">
+        <div class="metric-label">Recall</div>
+        <div class="metric-track"><div class="metric-fill" style="width:74%;background:#534AB7;">74%</div></div>
+      </div>
+      <div class="metric-bar-row">
+        <div class="metric-label">F1 Score</div>
+        <div class="metric-track"><div class="metric-fill" style="width:76%;background:#BA7517;">0.765</div></div>
+      </div>
+      <div class="metric-bar-row">
+        <div class="metric-label">ROC-AUC</div>
+        <div class="metric-track"><div class="metric-fill" style="width:87%;background:#993C1D;">0.87</div></div>
+      </div>
+    </div>
+
+    <div class="card-grid">
+      <div class="card accent-teal">
+        <div class="badge badge-teal">Metric</div>
+        <div class="card-title">Confusion matrix</div>
+        <div class="card-desc">Breaks predictions into TP, TN, FP, FN — making visible exactly which types of errors the model makes, not just how many.</div>
+      </div>
+      <div class="card accent-teal">
+        <div class="badge badge-teal">Metric</div>
+        <div class="card-title">ROC-AUC</div>
+        <div class="card-desc">Measures discrimination across all thresholds. A model with AUC 0.95 is reliably separating positives from negatives regardless of cutoff.</div>
+      </div>
+      <div class="card accent-teal">
+        <div class="badge badge-teal">Validation</div>
+        <div class="card-title">Holdout testing</div>
+        <div class="card-desc">Evaluating on data the model never saw during training is the minimum bar for trustworthy performance reporting.</div>
+      </div>
+      <div class="card accent-teal">
+        <div class="badge badge-teal">Validation</div>
+        <div class="card-title">Red-teaming</div>
+        <div class="card-desc">Adversarial probing by humans attempting to elicit unsafe, biased, or incorrect outputs. Standard practice at OpenAI, Anthropic, and Google.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: SOLUTIONS -->
+  <div class="xai-section">
+    <div class="xai-section-label">04 — current solutions & techniques</div>
+
+    <div class="card-grid" style="margin-bottom: 1rem;">
+      <div class="card accent-coral">
+        <div class="badge badge-coral">Technique</div>
+        <div class="card-title">SHAP values</div>
+        <div class="card-desc">SHapley Additive exPlanations quantify each feature's contribution to a specific prediction using cooperative game theory.</div>
+      </div>
+      <div class="card accent-coral">
+        <div class="badge badge-coral">Technique</div>
+        <div class="card-title">LIME</div>
+        <div class="card-desc">Local Interpretable Model-agnostic Explanations build a simple interpretable model around individual predictions to approximate local behavior.</div>
+      </div>
+      <div class="card accent-coral">
+        <div class="badge badge-coral">Technique</div>
+        <div class="card-title">Attention visualization</div>
+        <div class="card-desc">Visualizing transformer attention weights reveals which input tokens influenced each output token — a window into model reasoning.</div>
+      </div>
+      <div class="card accent-coral">
+        <div class="badge badge-coral">Technique</div>
+        <div class="card-title">Probing classifiers</div>
+        <div class="card-desc">Small classifiers trained on internal model activations reveal what linguistic or factual information is encoded in specific layers.</div>
+      </div>
+      <div class="card accent-coral">
+        <div class="badge badge-coral">Technique</div>
+        <div class="card-title">Constitutional AI</div>
+        <div class="card-desc">Anthropic's approach: models are trained with explicit written principles (a "constitution"), making alignment criteria inspectable and auditable.</div>
+      </div>
+      <div class="card accent-coral">
+        <div class="badge badge-coral">Technique</div>
+        <div class="card-title">Chain-of-thought</div>
+        <div class="card-desc">Prompting models to reason step-by-step before answering makes intermediate reasoning visible and auditable by users and developers.</div>
+      </div>
+    </div>
+
+    <div class="org-row">
+      <div class="org-card">
+        <div class="org-name" style="color:#185FA5;">OpenAI (GPT)</div>
+        <div class="org-item">GPT-4 system card + safety evaluations</div>
+        <div class="org-item">Preparedness framework</div>
+        <div class="org-item">Interpretability research (superposition)</div>
+      </div>
+      <div class="org-card">
+        <div class="org-name" style="color:#854F0B;">Anthropic (Claude)</div>
+        <div class="org-item">Constitutional AI (CAI) methodology</div>
+        <div class="org-item">Model cards + responsible scaling policy</div>
+        <div class="org-item">Mechanistic interpretability research</div>
+      </div>
+      <div class="org-card">
+        <div class="org-name" style="color:#0F6E56;">Google (Gemini)</div>
+        <div class="org-item">RLHF + SFT transparency reports</div>
+        <div class="org-item">PAIR (People + AI Research) team</div>
+        <div class="org-item">What-If Tool, LIT, TCAV</div>
+      </div>
+      <div class="org-card">
+        <div class="org-name" style="color:#534AB7;">Meta (LLaMA)</div>
+        <div class="org-item">Open weights — community auditing</div>
+        <div class="org-item">Responsible use guide + model card</div>
+        <div class="org-item">Purple Llama safety toolkit</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CALLOUT -->
+  <div class="callout">
+    <div class="callout-label">Core principle</div>
+    <div class="callout-text">Explainability is not a feature added after a model is built — it is a design and validation discipline built into the development process. Performance metrics tell us <em>how well</em> a model performs; explainability tells us <em>why</em>, and whether we should trust that performance to hold in the real world.</div>
+  </div>
+
+  <p style="font-size:11px;color:var(--color-text-tertiary);">Sources: EU AI Act · OpenAI GPT-4 system card · Anthropic model cards · Google PAIR · Meta Purple Llama · NIST AI Risk Management Framework · Ribeiro et al. (LIME, 2016) · Lundberg & Lee (SHAP, 2017)</p>
+</div>
